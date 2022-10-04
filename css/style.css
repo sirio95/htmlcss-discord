@@ -15,9 +15,10 @@ body{
 
 header{
     width:100%;
-    height: 450px;;
+    height: 450px;
     background-image: url(../img/jumbo.png);
     background-size:cover;
+    background-repeat: no-repeat;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -85,6 +86,15 @@ header{
 
 }
 
+.btn.purple{
+    background-color: mediumpurple;
+    color:#fff;
+}
+
+.btn.purple:hover{
+    box-shadow: 1px 3px 3px mediumpurple;
+    background-color: plum;
+}
 
 /* jumbotron */
 .jumbotron{
@@ -105,7 +115,7 @@ h1{
 }
 
 sub{
-    flex-basis: 35%;
+    flex-basis: 30%;
     line-height: 150%;
     font-size: 18px;
     text-align: center;
@@ -121,21 +131,67 @@ sub{
 
 /* main - regole generali */
 main{
-    margin: 5% 10%;
     background-color: #fff;
 }
 
+/* colonne */
 .flex-col{
+    margin:5% 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.box{
+    width:100%;
+    display:flex;
+    justify-content: center;
     align-items: center;
 }
 
 .odd{
+    flex-direction: row-reverse;
+    justify-content: center;
     background-color: lightgrey;
 }
+.text{
+    width:250px;
+    line-height: 150%;
+}
+.text h2{
+    margin-bottom:30px;
+    font-size: 36px;
+    line-height: 120%;
+}
 
+/* chiusura main */
+.grey{
+    background-color: lightgrey;
+    background-size: cover;
+    justify-content: space-around;
+    padding: 5% 0;
+    margin:0;
+}
+
+.grey h2{
+    font-size: 36px;
+}
+
+.grey p{
+    text-align: center;
+    line-height: 150%;
+    font-size: 18px;
+    width: 700px;
+    margin-top: 50px;
+}
+
+.grey h3{
+    margin-bottom: 50px;
+    font-size: 32px;
+}
 /* footer - regole generali */
 footer{
     width:100%;

@@ -15,15 +15,63 @@ body{
 
 header{
     width:100%;
-    height:auto;
+    height:60vh;
     background-image: url(../img/jumbo.png);
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+/* barra navigazione top */
+.topbar{
+    width:80%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color:#fff;
+}
+
+.topbar ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    flex-basis: 40%;
+}
+
+.topbar ul li{
+    margin: 10px;
+}
+.topbar a{
+    text-decoration: none;
+    color:white;
+}
+.topbar ul a:hover{
+    color:rgb(96, 237, 101);
+    text-decoration: underline;
+}
+
+/* Pulsanti */
+.btn{
+    border-radius: 25px;
+    padding:7px 10px;
+}
+
+.btn.white:hover{
+    box-shadow: 1px 3px 3px rgb(0, 0, 0);
+}
+
+.btn.white{
+    background-color: #fff;
+    color:black;
+}
+
+
+
+
 
 /* main - regole generali */
 main{

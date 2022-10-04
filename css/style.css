@@ -1,0 +1,80 @@
+
+/* Regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:14px;
+}
+
+/* header - regole generali*/
+
+header{
+    width:100%;
+    height:auto;
+    background-image: url(../img/jumbo.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main - regole generali */
+main{
+    margin: 5% 10%;
+    background-color: #fff;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.odd{
+    background-color: lightgrey;
+}
+
+/* footer - regole generali */
+footer{
+    width:100%;
+    height:auto;
+    background-color: rgb(2, 2, 44);
+    color:#fff;
+    margin: 5% 10%; 
+}
+
+.footerflex{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.contatti{
+    flex-basis: 30%;
+}
+
+.bottomnav{
+    flex-basis: 70%;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    list-style: none;
+}
+
+.chiusura{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3px solid lightgray;
+}
